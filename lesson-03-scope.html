@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>angularjs bootstrap</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="lib/angular/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lesson-03-scope.js"></script>
+</head>
+<body>
+<div ng-app="">
+	<input type="text" ng-model="data.name">
+	<h1>hello {{ name || "world"}}</h1>
+	<div ng-controller="MyFirstCtrl">
+		<input type="text" ng-model="data.name">
+		<h1>hello {{ name || "First"}}</h1>
+	</div>
+	<div ng-controller="MySecondCtrl">
+		<input type="text" ng-model="data.name">
+		<h1>hello {{ name || "Second"}}</h1>
+	</div>
+</div>
+
+<div ng-app="">
+	<input type="text" ng-model="name">
+	<h1>hello {{ name || "world"}}</h1>
+	<div ng-controller="MyFirstCtrl">
+		<input type="text" ng-model="name">
+		<h1>hello {{ name || "First"}}</h1>
+	</div>
+	<div ng-controller="MySecondCtrl">
+		<input type="text" ng-model="name">
+		<h1>hello {{ name || "Second"}}</h1>
+	</div>
+</div>
+</body>
+</html>
