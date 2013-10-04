@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>angularjs behaviors</title>
+<script src="lib/angular/angular.js"></script>
+<script src="js/lesson-14-taking-to-controller.js"></script>
+<style>
+    .panel{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+
+<div ng-app="twitterApp">
+    <div ng-controller="TwitterCtrl">
+        
+        <div enter="loadMoreTweets()"> load more tweets</div>
+        <div enter="deleteTweets()"> deleting tweets</div>
+
+    </div>
+</div>
+</body>
+</html>
