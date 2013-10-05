@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>angularjs direcitve to directive</title>
 <script src="lib/angular/angular.js"></script>
-<script src="js/lesson-14-taking-to-controller.js"></script>
+<script src="js/lesson-15-directive-to-directive.js"></script>
 <style>
     .panel{
         background-color: red;
@@ -13,13 +13,12 @@
 </head>
 <body>
 
-<div ng-app="twitterApp">
-    <div ng-controller="TwitterCtrl">
-        
-        <div enter="loadMoreTweets()"> load more tweets</div>
-        <div enter="deleteTweets()"> deleting tweets</div>
+<div ng-app="superApp">
+   <superhero flash speed strength>Superman</superhero> <br>
 
-    </div>
+   <superhero strength>Hulk</superhero> <br>
+
+   <superhero flash>Flash</superhero>
 </div>
 </body>
 </html>

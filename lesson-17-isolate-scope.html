@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>angularjs direcitve to directive</title>
+<script src="lib/angular/angular.js"></script>
+<script src="js/lesson-17-isolate-scope.js"></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div ng-app="drinkApp">
+	<div ng-controller="DrinkCtrl">
+		<input type="text" ng-model="ctrlFlavor">
+		<div drink flavor="{{ctrlFlavor}}"></div>
+	</div>
+</div>
+</body>
+</html>
