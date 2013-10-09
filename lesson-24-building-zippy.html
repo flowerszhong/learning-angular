@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>angularjs direcitve to directive</title>
+<script src="lib/angular/angular.js"></script>
+<script src="js/lesson-24-building-zippy.js"></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div ng-app="app">
+    <input type="text" name="" ng-model="model.title">
+    <input type="text" name="" ng-model="model.content">
+    <zippy title="{{model.title}}">
+        The content is : {{ model.content }}
+    </zippy>
+</div>
+</body>
+</html>
